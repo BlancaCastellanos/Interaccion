@@ -23,8 +23,28 @@ namespace Interaccion
         public MainWindow()
         {
             InitializeComponent();
+
+            btnMiBoton.Click += BtnMiBoton_Click;
+        }
+
+        private void BtnMiBoton_Click(object sender, RoutedEventArgs e)
+        {
             lblHolaMundo.Text = "Adios Mundo!";
-            lblHolaMundo.FontSize = 29;
+            lblHolaMundo.FontSize = 27;
+            lblHolaMundo.Foreground = Brushes.Red;
+        }
+
+        private void BtnMiSegundoBoton_Click(object sender, RoutedEventArgs e)
+        {
+            lblHolaMundo.Text = "Segundo boton!";
+            lblHolaMundo.FontSize = 27;
+            lblHolaMundo.Foreground = Brushes.Red;
+        }
+
+        private void BtnMiTercerBoton_Click(object sender, RoutedEventArgs e)
+        {
+            lblHolaMundo.Text = "Tercer boton!";
+            lblHolaMundo.FontSize = 27;
             lblHolaMundo.Foreground = Brushes.Red;
         }
     }
